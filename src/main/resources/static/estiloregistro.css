@@ -1,0 +1,80 @@
+body {
+    background-color: #a99ad6; /* Fondo morado */
+    font-family: Arial, sans-serif;
+}
+
+.formulario {
+    background-color: #e8b3c9; /* Fondo del formulario */
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.imput-box {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5px;
+    background-color: #f4dada; /* Fondo de los inputs */
+}
+
+button.btn {
+    background-color: #d6eef6; /* Fondo del botón */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.btn:hover {
+    background-color: #c1d5e6; /* Fondo del botón al pasar el cursor */
+}
+
+.cancelacion a {
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cancelacion a:hover {
+    text-decoration: underline;
+}
+
+.formulario::after {
+    content: "";
+    background-image: url('path-to-image'); /* Aquí colocas la ruta de la imagen de la tienda de mascotas */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    right: -20px;
+}

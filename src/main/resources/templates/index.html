@@ -8,16 +8,24 @@
     <title>Login</title>
 </head>
 <body>
+    <div class="login__img">
+        <img src="logo_login.png" alt="LOGO_EMPRESA" height="400px" width="420px">
+    </div>
             <div class="login__content">
                 <form action="@{/login}" th:object="${login}" method="post">
                     <h2 class="login__title">Login</h2>
+                    <div class="container">
                     <div class="login__user">
                         <i class='bx bx-user login__icon'></i>
                         <input type="text" placeholder="Username" th:field="*{email}" class="login__input"><br>
                     </div>
                     <div class="login__user">
-                        <i class='bx bxs-key'></i>
+                        <i class='bx bxs-lock-alt login__icon'></i>
                         <input type="password"placeholder="Password" th:field="*{password}" class="login__input">
+                    </div>
+                    <div class="recuperacion">
+                    <a href="/###" class="login__recuperation">¿Olvidaste tu contraseña?</a><br>
+                    </div>
                     </div>
                     <button type="submit" class="login__button">Login</button>
                     <div>
