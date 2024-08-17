@@ -38,9 +38,9 @@ public class MainController {
 
         if(usuarioOptional.isPresent()) {
             Usuarios usuario = usuarioOptional.get();
-            String contrasenia = usuario.getPassword();
+            String password = usuario.getPassword();
 
-            if(contrasenia.equals(login.getPassword())) {
+            if(password.equals(login.getPassword())) {
                 usuarioIniciado = usuario;
                 return "redirect:/principal";
             }
@@ -71,7 +71,7 @@ public class MainController {
 
     @GetMapping("/principal")
     public String principal(Model model) {
-        model.addAttribute("usuario", usuarioIniciado);
+        model.addAttribute("nombreUsuario", usuarioIniciado.getNombre());
         return "principal";
     }
 

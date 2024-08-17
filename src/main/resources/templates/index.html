@@ -12,7 +12,7 @@
         <img src="logo_login.png" alt="LOGO_EMPRESA" height="400px" width="420px">
     </div>
             <div class="login__content">
-                <form action="@{/login}" th:object="${login}" method="post">
+                <form th:action="@{/login}" th:object="${login}" method="post" >
                     <h2 class="login__title">Login</h2>
                     <div class="container">
                     <div class="login__user">

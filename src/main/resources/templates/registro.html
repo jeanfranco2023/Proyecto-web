@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <title>Formulario de Usuario</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="estiloregistro.css">
+    <link rel="stylesheet" href="registro.css">
 </head>
 <body>
 <div class="formulario">
-    <h1>Formulario de Usuario</h1>
-    <form th:action="@{/guardar}" th:object="${usuario}" method="post">
-        <input type="hidden" th:field="*{id}"/>
-    <div class="imput-box">
-        <label>Nombre:</label>
-        <input type="text" th:field="*{nombre}"/><br/>
+    <h1 class="titulo">Registro de Usuario</h1><br/>
+    <div class="form-container">
+        <form th:action="@{/guardar}" th:object="${usuario}" method="post">
+            <input type="hidden" th:field="*{id}"/>
+            <div class="container">
+                <div class="input-box">
+                    <label>Nombre:</label>
+                    <input type="text" th:field="*{nombre}"/><br/>
+                </div>
+                <div class="input-box">
+                    <label>Apellido:</label>
+                    <input type="text" th:field="*{apellido}"/><br/>
+                </div>
+                <div class="input-box">
+                    <label>Email:</label>
+                    <input type="email" th:field="*{email}"/><br/>
+                </div>
+                <div class="input-box">
+                    <label>Contraseña:</label>
+                    <input type="password" th:field="*{password}"/><br/>
+                </div>
+            </div>
+        <div class="cancelacion">
+            <button type="submit" class="btn">Registrar</button>
+                <a href="/index">Cancelar</a>
+            </div>
+        </form>
+        <div class="registro__image">
+            <img src="pet-shop.png" alt="Pet Shop" height="380px" width="370px">
+        </div>
     </div>
-    <div class="imput-box">
-        <label>Apellido:</label>
-        <input type="text" th:field="*{apellido}"/><br/>
-    </div>
-        <div class="imput-box">
-        <label>Email:</label>
-        <input type="email" th:field="*{email}"/><br/>
-    </div>
-        <div class="imput-box">
-        <label>Contraseña:</label>
-        <input type="password" th:field="*{password}"/><br/>
-    </div>
-        <button type="submit" class="btn">Guardar</button>
-    </form>
-    <div class="cancelacion">
-    <a href="/index">Cancelar</a>
 </div>
 </body>
 </html>
