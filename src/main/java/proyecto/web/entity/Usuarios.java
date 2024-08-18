@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -19,26 +20,33 @@ public class Usuarios {
 
     private String apellido;
 
+    private String telefono;
+
     @Column(unique = true)
     private String email;
     
     private String password;
 
+    @OneToMany(mappedBy = "usuarios")
+    private Mascotas mascotas;
+
     public Usuarios() {
 
     }
 
-    public Usuarios(String nombre, String apellido, String email, String password) {
+    public Usuarios(String nombre, String apellido, String telefono, String email, String password) {
         this.nombre = nombre;
         this.apellido = apellido;
+        this.telefono = telefono;
         this.email = email;
         this.password = password;
     }
-    
-    public Usuarios(Integer id, String nombre, String apellido, String email, String password, String telefono) {
+
+    public Usuarios(Integer id, String nombre, String apellido, String telefono, String email, String password) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.telefono = telefono;
         this.email = email;
         this.password = password;
     }
@@ -67,6 +75,14 @@ public class Usuarios {
         this.apellido = apellido;
     }
 
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -82,5 +98,18 @@ public class Usuarios {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public Mascotas getMascotas() {
+        return mascotas;
+    }
+
+    public void setMascotas(Mascotas mascotas) {
+        this.mascotas = mascotas;
+    }
+
+
+
+   
+
 
 }
