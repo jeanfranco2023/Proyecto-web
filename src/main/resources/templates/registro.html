@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Formulario de Usuario</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="css/registro.css">
 </head>
 <body>
 <div class="formulario">
@@ -22,6 +22,10 @@
                     <input type="text" th:field="*{apellido}"/><br/>
                 </div>
                 <div class="input-box">
+                    <label>Telefono:</label>
+                    <input type="text" th:field="*{telefono}"/><br/>
+                </div>  
+                <div class="input-box">
                     <label>Email:</label>
                     <input type="email" th:field="*{email}"/><br/>
                 </div>
@@ -29,6 +33,7 @@
                     <label>Contraseña:</label>
                     <input type="password" th:field="*{password}"/><br/>
                 </div>
+  
             </div>
         <div class="cancelacion">
             <button type="submit" class="btn">Registrar</button>
@@ -36,7 +41,7 @@
             </div>
         </form>
         <div class="registro__image">
-            <img src="pet-shop.png" alt="Pet Shop" height="380px" width="370px">
+            <img src="imagenes/pet-shop.png" alt="Pet Shop" height="380px" width="370px">
         </div>
     </div>
 </div>

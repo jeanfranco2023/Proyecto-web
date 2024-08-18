@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d9e9f3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8df5e9;
+    padding: 20px;
+}
+
+header img:first-child {
+    margin-left: 0px;
+}
+
+header p {
+    margin: 0 15px;
+    font-size: 25px;
+}
+.usuario{
+    margin: 0 0 0 0;
+    font-size: 20px;
+    color: black;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header img:last-child {
+    margin-right: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px; /* Ajusta este valor para controlar el espacio entre los elementos */
+}
+
+.usuario {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+.carrusel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #e5e5e5;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrusel ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    animation: slide 20s infinite;
+}
+
+.carrusel li {
+    min-width: 100%;
+}
+
+.carrusel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Animación del Carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+/* Estilo de las Secciones de Productos */
+.productos, .nuevos-productos {
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #b4c4d8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    background-color: #e5e5e5;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.producto img {
+    border-radius: 10px;
+}
+
+.producto p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #8df5e9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+    color: black;
+}
+
+.footer-conten {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+footer i {
+    margin-right: 10px;
+    color: #333;
+}
+
+footer .consultas,
+footer .Atencion,
+footer .ubicacion {
+    display: block;
+    text-align: left;
+    align-content: center;
+    flex: 1;
+}
+
+footer .ubicacion p,
+footer .horarios p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .ubicacion i,
+footer .horarios i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    vertical-align: middle;
+}

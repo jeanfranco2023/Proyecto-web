@@ -1,5 +1,9 @@
 package proyecto.web.entity;
 
+
+
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,7 +32,7 @@ public class Usuarios {
     private String password;
 
     @OneToMany(mappedBy = "usuarios")
-    private Mascotas mascotas;
+    private List<Mascotas> mascotas;
 
     public Usuarios() {
 
@@ -99,17 +103,14 @@ public class Usuarios {
         this.password = password;
     }
 
-    public Mascotas getMascotas() {
+    public List<Mascotas> getMascotas() {
         return mascotas;
     }
 
-    public void setMascotas(Mascotas mascotas) {
+    public void setMascotas(List<Mascotas> mascotas) {
         this.mascotas = mascotas;
     }
 
-
-
-   
-
+    
 
 }
