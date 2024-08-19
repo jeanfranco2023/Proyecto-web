@@ -75,5 +75,15 @@ public class MainController {
         return "principal";
     }
 
+    @GetMapping("/servicios-pet")
+    public String servicios(Model model) {
+        model.addAttribute("nombreUsuario", usuarioIniciado.getNombre());
+        return "servicios";
+    }
     
+    @GetMapping("/servicios-grooming")
+    public String grooming(Model model) {
+        model.addAttribute("nombreUsuario", usuarioIniciado.getNombre());
+        return "grooming";
+    }
 }

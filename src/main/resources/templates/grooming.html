@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/servicios/grooming.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Patitas Suaves</title>
+</head>
+<body>
+    <header>
+        <a href="/principal"><img src="imagenes/logo.png" alt="LOGO.PET" width="250" height="80"></a>
+        <p><a href="/ProductosPerros">Perros</a></p>
+        <p><a href="/ProductosGatos">Gatos</a></p>
+        <p><a href="/Productos">Productos</a></p>
+        <p><a href="/Servicios">Servicios</a></p>
+        <div class="logo">
+        <a class="usuario">¡Hola! <span th:text="${nombreUsuario}"> </span> </a>
+        <a><img src="imagenes/user.png" alt="USER.PET" width="50" height="50"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="img">
+            <img src="imagenes/servicios/especificos/servis-grooming.png" alt="GROOMING">
+        </div>
+    
+        <div class="servicio">
+            <h2>SERVICIO DE GROOMING</h2>
+            <h3>El servicio de grooming incluye:</h3>
+            <p>Baño</p>
+            <p>Secado</p>
+            <p>Corte y desenredado del pelaje</p>
+            <p>Corte y limado de uñas</p>
+            <p>Limpieza de glándulas y orejas</p>
+            <p>Colonia (Opcional)</p>
+    
+            <button class="btn" type="submit">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-conten">  
+            <div class="consultas">
+                <h2>Consultas</h2>
+                <p>Número de celular: 999 999 999</p>
+                <p>Número fijo:01 333 4020</p>
+                <p>Correo: ventas@petsshop.pe</p>
+            </div>
+            <div class="Atencion">
+                <h2>Atención al cliente</h2>
+                <p><i class='bx bx-check-square'></i>Políticas de devoluciones</p>
+                <p><i class='bx bx-check-square'></i>Preguntas frecuentes</p>
+                <p><i class='bx bx-check-square'></i>Terminos y condiciones</p>
+                <p><i class='bx bx-check-square'></i>Libro de reclamaciones</p>
+                <p><i class='bx bx-check-square'></i>Politicas de privacidad</p>
+
+            </div>
+            <div class="ubicacion">
+                <h2>Ubicanos en</h2>
+                <div>
+                    <p><i class='bx bxs-map'></i>Av. lima 8578, Lima - Lima</p>
+
+                <div class="horarios">  
+                    <h2>Horarios</h2> 
+                    <p><i class='bx bx-time-five'></i>Lunes a Sabado: 9:00 a 18:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

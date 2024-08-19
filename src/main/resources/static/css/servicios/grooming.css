@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d9e9f3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8df5e9;
+    padding: 20px;
+}
+
+header img:first-child {
+    margin-left: 0px;
+}
+
+header p {
+    margin: 0 15px;
+    font-size: 25px;
+}
+.usuario{
+    margin: 0 0 0 0;
+    font-size: 20px;
+    color: black;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header img:last-child {
+    margin-right: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px; /* Ajusta este valor para controlar el espacio entre los elementos */
+}
+
+.usuario {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+
+.container {
+    display: flex;
+    background-color: #ECE8FC; /* Light purple background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: flex-end;
+    align-items: center; /* Add this line to increase the space on the right */
+}
+
+.img img {
+    width: 400px; /* Adjust based on the image size */
+    height: auto;
+    border-radius: 10%; /* Slightly rounded corners */
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.servicio {
+    margin-left: 40px;
+    margin-right: 200px;
+}
+
+.servicio h2 {
+    font-size: 40px;
+    color: #1A1A1A; /* Dark text color */
+    margin: 0;
+    font-family: "lalezar", sans-serif;
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px;
+}
+
+.servicio h3 {
+    font-size: 25px;
+    color: #1A1A1A; /* Dark text color */
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-weight: bold; /* Semi-bold text */
+}
+
+.servicio p {
+    padding-left: 10%;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    color: #1A1A1A; /* Dark text color */
+    margin: 5px 0;
+    font-weight: bold; /* Semi-bold text */
+}
+
+.servicio p::before {
+    content: "•";
+    color: #1A1A1A;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: #4D8AF0; /* Blue button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3B6ED8; /* Darker blue on hover */
+}
+
+
+footer {
+    background-color: #8df5e9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+    color: black;
+}
+
+.footer-conten {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+footer i {
+    margin-right: 10px;
+    color: #333;
+}
+
+footer .consultas,
+footer .Atencion,
+footer .ubicacion {
+    display: block;
+    text-align: left;
+    align-content: center;
+    flex: 1;
+}
+
+footer .ubicacion p,
+footer .horarios p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .ubicacion i,
+footer .horarios i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    vertical-align: middle;
+}
